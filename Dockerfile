@@ -37,4 +37,4 @@ WORKDIR /workspace
 RUN mkdir -p /workspace/demo && \
     echo 'print("hello coterm")' > /workspace/demo/main.py
 
-CMD ["/bin/bash"]
+CMD ["tail", "-f", "/dev/null"]
